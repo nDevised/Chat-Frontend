@@ -49,12 +49,17 @@ body{
     background-color: #4E53A5;
 }
 
+.footer{
+    display: flex;
+    background-color: #1a1a1a;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
 .footer form{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #1a1a1a;
 }
 
 form input{
@@ -64,13 +69,60 @@ form input{
     border-radius: 5px;
     outline: none;
     font-size: 1rem;
+    width: 80vw;
+    max-width: 1000px;
 }
 
-form button{
+.chat-btn{
     width: 40px;
     height: 40px;
     border: #1a1a1a;
     border-radius: 5px;
     outline: none;
     margin-left: 10px;
+}
+
+/* Media queries */
+@media (max-width: 1500px) {
+    form input {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 1200px) {
+    form input {
+        max-width: 700px;
+    }
+}
+
+
+@media (max-width: 899px) {
+    form input {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 500px) {
+    form input {
+        max-width: 200px;
+    }
+}
+
+
+@media (max-width: 300px) {
+    form{
+        flex-direction: column;
+    }
+    
+    .footer{
+        flex-direction: column;
+    }
+
+    .chat-btn{
+        margin-top: 10px;
+    }
+
+    .form-input{
+        
+    }
 }
