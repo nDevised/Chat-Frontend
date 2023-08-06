@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Chat bot</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js"></script>
 </head>
 
 
@@ -17,16 +18,20 @@
             <p class="message user_msg">Hello</p>
         </div>
         <div class="footer">
-            <form>
-                <input type="text" name="message" placeholder="Type your message here...">
-                <button class="chat-btn" type="submit" value="Send"></button>
+            <input type="text" name="message" placeholder="Type your message here...">
 
-            </form>
-            <button class="chat-btn"></button>
+            <div class="msg-btns">
+                <button class="chat-btn" type="submit" value="Send" onclick="sendMessage()"></button>
+                <button class="chat-btn"></button>
+            </div>
+
 
         </div>
         
     </div>
+
+    <script src="./app.js"></script>
+
 </body>
 
 </html>
