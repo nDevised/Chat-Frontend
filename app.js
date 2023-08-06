@@ -15,3 +15,13 @@ function sendMessage() {
         messageInput.value = '';
     }
 }
+
+function handleEnterKey(event) {
+    if (event.keyCode === 13) {
+        // If the Enter key is pressed, call sendMessage()
+        sendMessage();
+
+        // Prevent form submission (in case the input is inside a form)
+        event.preventDefault();
+    }
+}

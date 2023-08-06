@@ -17,7 +17,7 @@
             <p class="message">Hello</p>
         </div>
         <div class="footer">
-            <input type="text" name="message" placeholder="Type your message here...">
+            <input type="text" name="message" id="messageInput" placeholder="Type your message here..." onkeydown="handleEnterKey(event)">
 
             <div class="msg-btns">
                 <button class="chat-btn" type="submit" value="Send" onclick="sendMessage()"></button>
