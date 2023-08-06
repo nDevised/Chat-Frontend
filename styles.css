@@ -79,6 +79,11 @@ body{
     border-radius: 5px;
     outline: none; 
     margin-left: 10px;
+    background-color: #4E53A5;
+}
+
+.mic_btn{
+    background-color: #f2f1ef;
 }
 
 .msg-btns{
