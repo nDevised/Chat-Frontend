@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <title>Chat bot</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./app.js"></script>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <script src="{% static 'app.js' %}"></script>
 </head>
 
 
@@ -20,8 +21,8 @@
             <input type="text" name="message" id="messageInput" placeholder="Type your message here..." onkeydown="handleEnterKey(event)">
 
             <div class="msg-btns">
-                <button class="chat-btn" type="submit" value="Send" onclick="sendMessage()"><img class="send-img" src="./images/sendmsg.svg"></button>
-                <button class="chat-btn mic_btn"><img class="mic-img" src="./images/mic.svg"></img></button>
+                <button class="chat-btn" type="submit" value="Send" onclick="sendMessage()"><img class="send-img" src="{% static 'images/sendmsg.svg' %}"></button>
+                <button class="chat-btn mic_btn"><img class="mic-img" src="{% static 'images/mic.svg' %}"></img></button>
             </div>
 
 
@@ -29,7 +30,7 @@
         
     </div>
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
