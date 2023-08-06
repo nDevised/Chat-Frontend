@@ -89,7 +89,18 @@ body{
 .msg-btns{
     display: flex;
     padding-left: 10px;
-    justify-content: space-between;
+    justify-content: space-between;;
+}
+
+.send-img{
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+}
+
+.mic-img{
+    width: 25px;
+    height: 25px;
 }
 /* Media queries */
 @media (max-width: 1500px) {
