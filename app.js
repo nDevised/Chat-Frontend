@@ -25,3 +25,16 @@ function handleEnterKey(event) {
         event.preventDefault();
     }
 }
+
+
+function botMessage(message) {
+
+    const messagesBody = document.querySelector('.body');
+    if (message !== '') {
+        const msg = document.createElement('p');
+        msg.classList.add('message');
+        msg.textContent = message;
+
+        messagesBody.appendChild(msg);
+    }
+}
